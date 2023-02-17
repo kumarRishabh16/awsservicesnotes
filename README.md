@@ -52,4 +52,12 @@ This repository contains AWS services notes which help you to become a AWS Certi
             - real-time analytics
             - distributed file systems
             - in-memory databases
-    
+    - ### Accelerated Computing
+        - use for machine learning, high performance computing, graphics intensive workloads, financial modelling, video encoding, and scientific modelling.
+        - [Use-For]
+            - machine learning
+            - high performance computing
+            - graphics intensive workloads
+            - financial modelling
+            - video encoding
+            - scientific modelling
