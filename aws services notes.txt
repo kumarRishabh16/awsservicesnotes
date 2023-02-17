@@ -1,0 +1,610 @@
+/-------------------Basic Notes of AWS services--------------------------\
+
+key tools, technologies, and concepts might be covered on the exam
+
+********************************AWS services and features*****************************
+
+1) Analytics
+
+--->Amazon Athena
+		|
+		|------Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL.
+		|------Athena is serverless. we can start analyzing data immediately
+
+--->Amazon Kinesis
+		|
+		|-----Easily collect, process, and analyze video and data streams in real time.
+		|-----Amazon Kinesis makes it easy to collect, process, and analyze real-time,
+			 streaming data so we can get timely insights and react quickly to new information.
+		|-----Amazon Kinesis,can ingest real-time data such as video, audio, application logs,
+			website clickstreams, and IoT telemetry data for machine learning, analytics, and other applications.
+
+--->Amazon QuickSight
+		|
+		|-----The most popular cloud-native, serverless BI service
+		|-----Amazon QuickSight allows everyone in your organization to understand your data by asking questions in natural language, 
+			exploring through interactive dashboards, 
+			or automatically looking for patterns and outliers powered by machine learning.
+
+2) Application Integration
+
+--->Amazon Simple Notification Service (Amazon SNS)
+		|
+		|-----Fully managed pub/sub messaging, SMS, email, and mobile push notifications
+		|-----Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application(A2A) 
+			and application-to-person (A2P) communication.
+		|-----The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, 
+			microservices, and event-driven serverless applications
+
+--->Amazon Simple Queue Service (Amazon SQS)
+		|
+		|-----Fully managed message queues for microservices, distributed systems, and serverless applications
+		|-----Amazon SQS provides several advantages over building your own software for managing message queues or using commercial or
+			 open-source message queuing systems that require significant upfront time for development and configuration. 
+
+3) Compute and Serverless
+
+--->AWS Batch
+		|
+		|-----AWS Batch enables developers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS.
+			 AWS Batch dynamically provisions the optimal quantity and type of compute resources (e.g., CPU or memory optimized instances)
+			 based on the volume and specific resource requirements of the batch jobs submitted.
+
+--->AWS EC2 
+		|
+		|-----Amazon Elastic Compute Cloud (Amazon EC2) offers the broadest and deepest compute platform, with over 500 instances and choice of the latest processor,
+			 storage, networking, operating system,
+			 and purchase model to help you best match the needs of your workload.
+
+
+--->AWS Elastic Beanstalk
+		|
+		|-----AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP,
+			 Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.
+		|-----There is no additional charge for Elastic Beanstalk - you pay only for the AWS resources needed to store and run your applications.
+
+--->Amazon WorkSpaces
+		|
+		|-----Amazon WorkSpaces is a fully managed desktop virtualization service for Windows and Linux
+			 that enables you to access resources from any supported device.
+		|-----
+--->Amazon Lightsail
+		|
+		|-----Amazon Lightsail, a powerful virtual cloud server built for reliability & performance.
+		|-----Build applications and websites fast with pre-configured cloud resources
+		|-----Lightsail gets you started quickly with preconfigured Linux and Windows application stacks and an intuitive management console.
+		|-----Lightsail automatically configures networking, access, and security environments, taking the guesswork out of launching your server.
+
+--->AWS Lambda
+		|
+		|-----AWS Lambda is a serverless, event-driven compute service that lets you run code for virtually
+			 any type of application or backend service without provisioning or managing servers.
+			 You can trigger Lambda from over 200 AWS services and software as a service (SaaS) applications, and only pay for what you use.
+			
+4) Containers
+
+--->Amazon Elastic Container Service (Amazon ECS)
+		|
+		|-----Amazon ECS is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale containerized applications.
+		|-----Launch thousands of containers across the cloud using your preferred continuous integration and delivery (CI/CD) and automation tools.
+		|-----Optimize your time with AWS Fargate serverless compute for containers, which eliminates the need to configure and manage control plane, nodes, and instances.
+		|-----Save up to 50 percent on compute costs with autonomous provisioning, auto-scaling, and pay-as-you-go pricing.
+		|-----Integrate seamlessly with AWS management and governance solutions, standardized for
+			compliance with virtually every regulatory agency around the globe.
+
+--->Amazon Elastic Kubernetes Service (Amazon EKS)
+		|
+		|-----Amazon Elastic Kubernetes Service (Amazon EKS) is a managed container
+			 service to run and scale Kubernetes applications in the cloud or on-premises
+
+--->AWS Fargate
+		|
+		|-----AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications without managing servers.
+			 AWS Fargate is compatible with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS)
+		|-----Deploy and manage your applications, not infrastructure. Fargate removes the operational overhead of scaling, patching, securing, and managing servers.
+
+
+5) Database
+
+--->Amazon Aurora
+		|
+		|-----Amazon Aurora is a relational database service that combines the speed and availability of high-end
+			 commercial databases with the simplicity and cost-effectiveness of open-source databases.
+			 Aurora is fully compatible with MySQL and PostgreSQL, allowing existing applications and tools to run without requiring modification.
+
+--->Amazon DynamoDB
+		|
+		|-----Fast, flexible NoSQL database service for single-digit millisecond performance at any scale
+		|-----Amazon DynamoDB is a NoSQL database that supports key-value and document data models.
+			 Developers can use DynamoDB to build modern, serverless applications that can start
+			 small and scale globally to support petabytes of data and tens of millions of read and write requests per second.
+			 DynamoDB is designed to run high-performance, internet-scale applications that would overburden traditional relational databases.
+
+--->Amazon ElastiCache
+		|
+		|-----Amazon ElastiCache is a fully managed, in-memory caching service supporting flexible, real-time use cases.
+			 You can use ElastiCache for caching, which accelerates application and database performance,
+			 or as a primary data store for use cases that don't require durability like session stores, gaming leaderboards, streaming, and analytics.
+			 ElastiCache is compatible with Redis and Memcached
+
+--->Amazon Redshift
+		|
+		|-----Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes,
+			 using AWS-designed hardware and machine learning to deliver the best price performance at any scale.
+
+--->Amazon RDS
+		|
+		|-----Amazon Relational Database Service (RDS) is a collection of managed services that makes it simple to set up,
+			 operate, and scale databases in the cloud. Choose from seven popular engines — Amazon Aurora with MySQL compatibility,
+			 Amazon Aurora with PostgreSQL compatibility, MySQL, MariaDB, PostgreSQL, Oracle, and SQL Server — and deploy on-premises with Amazon RDS on AWS Outposts.
+
+
+6) Developer Tools
+
+--->AWS CodeBuild
+		|
+		|-----AWS CodeBuild is a fully managed continuous integration service that compiles source code,
+			 runs tests, and produces software packages that are ready to deploy.
+			 With CodeBuild, you don’t need to provision, manage, and scale your own build servers.
+			 CodeBuild scales continuously and processes multiple builds concurrently, so your builds are not left waiting in a queue.
+			 You can get started quickly by using prepackaged build environments, or you can create custom build environments that use your own build tools. 
+			 With CodeBuild, you are charged by the minute for the compute resources you use.
+--->AWS CodeCommit
+		|
+		|-----AWS CodeCommit is a secure, highly scalable, managed source control service that hosts private Git repositories.
+			 It makes it easy for teams to securely collaborate on code with contributions encrypted in transit and at rest.
+			 CodeCommit eliminates the need for you to manage your own source control system or worry about scaling its infrastructure.
+			 You can use CodeCommit to store anything from code to binaries.
+			 It supports the standard functionality of Git, so it works seamlessly with your existing Git-based tools.
+--->AWS CodeDeploy
+		|
+		|-----AWS CodeDeploy is a fully managed deployment service that automates software deployments to a variety of compute services
+			 such as Amazon EC2, AWS Fargate, AWS Lambda, and your on-premises servers.
+			 AWS CodeDeploy makes it easier for you to rapidly release new features,
+			 helps you avoid downtime during application deployment, and handles the complexity of updating your applications.
+			 You can use AWS CodeDeploy to automate software deployments, eliminating the need for error-prone manual operations.
+			 The service scales to match your deployment needs.
+
+--->AWS CodePipeline
+		|
+		|-----AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines
+			 for fast and reliable application and infrastructure updates. CodePipeline automates the build,
+			 test, and deploy phases of your release process every time there is a code change, based on the release model you define.
+			 This enables you to rapidly and reliably deliver features and updates.
+			 You can easily integrate AWS CodePipeline with third-party services such as GitHub or with your own custom plugin. With AWS CodePipeline,
+			 you only pay for what you use. There are no upfront fees or long-term commitments.
+--->AWS CodeStar
+		|
+		|-----AWS CodeStar enables you to quickly develop, build, and deploy applications on AWS.
+			 AWS CodeStar provides a unified user interface, enabling you to easily manage
+			 your software development activities in one place. With AWS CodeStar, you can set
+			 up your entire continuous delivery toolchain in minutes, allowing you to start releasing code faster.
+			 AWS CodeStar makes it easy for your whole team to work together securely,
+	 		allowing you to easily manage access and add owners, contributors, and viewers to your projects
+
+7) Management, Monitoring, and Governance
+
+--->AWS Auto Scaling
+		|
+		|-----AWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady,
+			 predictable performance at the lowest possible cost. Using AWS Auto Scaling,
+			 it’s easy to setup application scaling for multiple resources across multiple services in minutes.
+
+ 			 The service provides a simple, powerful user interface that lets you build scaling plans for resources including Amazon EC2 instances and Spot Fleets,
+			 Amazon ECS tasks, Amazon DynamoDB tables and indexes, and Amazon Aurora Replicas.
+
+			 AWS Auto Scaling makes scaling simple with recommendations that allow you to optimize performance,
+			 costs, or balance between them. If you’re already using Amazon EC2 Auto Scaling to dynamically scale your Amazon EC2 instances,
+			 you can now combine it with AWS Auto Scaling to scale additional resources for other AWS services.
+
+			 With AWS Auto Scaling, your applications always have the right resources at the right time.
+
+--->AWS Budgets
+		|
+		|-----Improve planning and cost control with flexible budgeting and forecasting
+		|-----AWS Budgets allows you to set custom budgets to track your cost and usage from the simplest to the most complex use cases.
+			 With AWS Budgets, you can choose to be alerted by email or SNS notification
+			 when actual or forecasted cost and usage exceed your budget threshold,
+			 or when your actual RI and Savings Plans' utilization or coverage drops below your desired threshold
+
+--->AWS CloudFormation
+		|
+		|-----Speed up cloud provisioning with infrastructure as code
+		|-----AWS CloudFormation lets you model, provision, and manage AWS and third-party resources by treating infrastructure as code.
+
+--->AWS CloudTrail
+		|
+		|-----Track user activity and API usage
+		|-----Protect your organization from penalties using CloudTrail logs to prove compliance with regulations such as SOC, PCI, and HIPAA.
+		|-----AWS CloudTrail monitors and records account activity across your AWS infrastructure, 
+			giving you control over storage, analysis, and remediation actions.
+
+--->Amazon CloudWatch
+		|
+		|-----Observability of your AWS resources and applications on AWS and on-premises
+		|-----Amazon CloudWatch is a monitoring and observability service built for DevOps engineers,
+			 developers, site reliability engineers (SREs), IT managers, and product owners.
+			 CloudWatch provides you with data and actionable insights to monitor your applications,
+			 respond to system-wide performance changes, and optimize resource utilization. 
+			 CloudWatch collects monitoring and operational data in the form of logs, metrics, and events. 
+
+--->AWS Config
+		|
+		|-----Record and evaluate configurations of your AWS resources
+		|-----AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
+			 Config continuously monitors and records your AWS resource configurations and
+			 allows you to automate the evaluation of recorded configurations against desired configurations.
+			 With Config, you can review changes in configurations and relationships between AWS resources,
+			 dive into detailed resource configuration histories,
+			 and determine your overall compliance against the configurations specified in your internal guidelines.
+			 This enables you to simplify compliance auditing, security analysis, change management, and operational troubleshooting
+
+
+
+--->AWS Cost and Usage Report
+		|
+		|-----The AWS Cost & Usage Report contains the most comprehensive set of AWS cost and usage data available, including additional
+			 metadata about AWS services, pricing, credit, fees, taxes, discounts, cost categories, Reserved Instances, and Savings Plans.
+
+--->Amazon EventBridge (Amazon CloudWatch Events)
+		|
+		|-----Amazon EventBridge is a serverless event bus service that you can use to connect your applications with data from a variety of sources.
+		|-----EventBridge delivers a stream of real-time data from your applications, software as a service (SaaS) applications,
+			 and AWS services to targets such as AWS Lambda functions,
+			 HTTP invocation endpoints using API destinations, or event buses in other AWS accounts.
+
+NOTE:EventBridge was formerly called Amazon CloudWatch Events. The default event bus and the rules you created
+		 in CloudWatch Events also display in the EventBridge console. EventBridge uses the same CloudWatch Events API, so
+		 your code that uses the CloudWatch Events API stays the same. New features added to EventBridge are not added to CloudWatch Events.
+		 (https://youtu.be/N-_M7DUQVOg)
+
+--->AWS License Manager
+		|
+		|-----Set rules to manage, discover, and report software license usage
+		|-----AWS License Manager makes it easier to manage your software licenses from vendors such as Microsoft, SAP, Oracle,
+			 and IBM across AWS and on-premises environments.
+			 AWS License Manager lets administrators create customized licensing rules that mirror the terms of their licensing agreements.
+
+
+
+--->AWS Managed Services
+		|
+		|-----AWS Managed Services (AMS) helps you operate your AWS infrastructure more efficiently and securely.
+			 Leveraging AWS services and a growing library of automations, configurations, and run books,
+			 AMS can augment and optimize your operational capabilities in both new and existing AWS environments. Whether customers are just getting started, migrating a data center,
+			 or building optimized solutions in the cloud, ongoing operational excellence is a critical component to success in the cloud
+
+
+
+
+--->AWS Organizations
+		|
+		|-----Centrally manage and govern your environment as you scale your AWS resources
+		|-----AWS Organizations helps you centrally manage and govern your environment as you grow and scale your AWS resources.
+			 Using AWS Organizations, you can programmatically create new AWS accounts and allocate resources,
+			 group accounts to organize your workflows, apply policies to accounts or groups for governance,
+			 and simplify billing by using a single payment method for all of your accounts.
+
+--->AWS Secrets Manager
+		|
+		|-----AWS Secrets Manager helps you protect secrets needed to access your applications, services, and IT resources.
+			 The service enables you to easily rotate,
+			 manage, and retrieve database credentials, API keys, and other secrets throughout their lifecycle. 
+
+--->AWS Systems Manager
+		|
+		|-----Gain operational insights into AWS and on-premises resources
+		|-----AWS Systems Manager is a secure end-to-end management solution for hybrid cloud environments.
+			|---Improve visibility and control in the cloud, on premises, and at the edge
+			|---Shorten the time to detect and resolve operational issues.
+			|---Maintain instance compliance against your patch, configuration, and custom policies.
+			|---Automate configuration and ongoing management of your applications and resources.
+
+--->AWS Systems Manager Parameter Store
+		|
+		|-----Parameter Store, a capability of AWS Systems Manager, provides secure, hierarchical storage for configuration data management and secrets management.
+			 You can store data such as passwords, database strings, Amazon Machine Image (AMI) IDs, and license codes as parameter values.
+
+NOTE: To implement password rotation lifecycles, use AWS Secrets Manager. You can rotate, manage,
+		 and retrieve database credentials, API keys, and other secrets throughout their lifecycle using Secrets Manager.
+		 For more information, see What is AWS Secrets Manager? in the AWS Secrets Manager User Guide.
+
+--->AWS Trusted Advisor
+		|
+		|-----AWS Trusted Advisor provides recommendations that help you follow AWS best practices.
+			 Trusted Advisor evaluates your account by using checks. These checks identify ways to optimize your AWS infrastructure,
+			 improve security and performance, reduce costs, and monitor service quotas.
+			 You can then follow the check recommendations to optimize your services and resources.
+
+
+8) Networking and Content Delivery
+
+--->Amazon API Gateway
+		|
+		|-----Amazon API Gateway is a fully managed service that makes it easy for developers to create,
+ 			 publish, maintain, monitor, and secure APIs at any scale. APIs act as the "front door" for applications to access data, business logic,
+			 or functionality from your backend services. Using API Gateway,
+			 you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications.
+			 API Gateway supports containerized and serverless workloads, as well as web applications.
+
+--->Amazon CloudFront
+		|
+		|-----Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content, such as .html, .css, .js,
+			 and image files, to your users. CloudFront delivers your content through a worldwide network of data centers called edge locations.
+			 When a user requests content that you're serving with CloudFront, the request is routed to the edge location
+			 that provides the lowest latency (time delay), so that content is delivered with the best possible performance.
+
+				|---If the content is already in the edge location with the lowest latency, CloudFront delivers it immediately.
+
+				|---If the content is not in that edge location, CloudFront retrieves it from an origin that you've defined—such as an Amazon S3 bucket,
+					 a MediaPackage channel, or an HTTP server (for example, a web server) that
+					 you have identified as the source for the definitive version of your content.
+
+---> AWS Direct Connect
+		|
+		|-----The AWS Direct Connect cloud service is the shortest path to your AWS resources.
+			 While in transit, your network traffic remains on the AWS global network and never touches the public internet.
+			 This reduces the chance of hitting bottlenecks or unexpected increases in latency.
+
+
+--->Amazon Route 53
+		|
+		|-----A reliable and cost-effective way to route end users to Internet applications
+		|-----Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service.
+	 	|-----It is designed to give developers and businesses an extremely reliable and cost effective way to route end users
+			 to Internet applications by translating names like www.example.com into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other.
+			 Amazon Route 53 is fully compliant with IPv6 as well.
+
+--->Amazon VPC
+		|
+		|-----Define and launch AWS resources in a logically isolated virtual network
+		|-----Amazon Virtual Private Cloud (Amazon VPC) gives you full control over your virtual networking environment,
+			 including resource placement, connectivity, and security. Get started by setting up your VPC in the AWS service console.
+			 Next, add resources to it such as Amazon Elastic Compute Cloud (EC2) and Amazon Relational Database Service (RDS) instances.
+			 Finally, define how your VPCs communicate with each other across accounts, Availability Zones, or AWS Regions.
+			 In the example below, network traffic is being shared between two VPCs within each Region.
+
+
+9) Security, Identity and Compliance
+
+--->AWS Artifact
+		|
+		|-----No cost, self-service portal for on-demand access to AWS’ compliance reports.
+		|-----AWS Artifact is your go-to, central resource for compliance-related information that matters to you.
+			 It provides on-demand access to AWS’ security and compliance reports and select online agreements.
+			 Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports,
+			 and certifications from accreditation bodies across geographies and compliance verticals
+			 that validate the implementation and operating effectiveness of AWS security controls.
+			 Agreements available in AWS Artifact include the Business Associate Addendum (BAA) and the Nondisclosure Agreement (NDA).
+
+
+--->AWS Certificate Manager (ACM)
+		|
+		|-----Easily provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services and your internal connected resources
+		|-----AWS Certificate Manager is a service that lets you easily provision, manage,
+			 and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources. SSL/TLS certificates are used to secure network communications and establish the identity of websites over the Internet as well as resources on private networks.
+			 AWS Certificate Manager removes the time-consuming manual process of purchasing, uploading, and renewing SSL/TLS certificates.
+
+--->AWS CloudHSM
+		|
+		|-----Managed hardware security module (HSM) on the AWS Cloud.
+		|-----AWS CloudHSM is a cloud-based hardware security module (HSM)
+ 			 that enables you to easily generate and use your own encryption keys on the AWS Cloud.
+			 With CloudHSM, you can manage your own encryption keys using FIPS 140-2 Level 3 validated HSMs.
+			 CloudHSM offers you the flexibility to integrate with your applications using industry-standard APIs,
+			 such as PKCS#11, Java Cryptography Extensions (JCE),
+			 and Microsoft CryptoNG (CNG) libraries.
+
+--->Amazon Cognito
+		|
+		|-----Simple and Secure User Sign-Up, Sign-In, and Access Control
+		|-----Amazon Cognito lets you add user sign-up, sign-in,
+			 and access control to your web and mobile apps quickly and easily.
+			 Amazon Cognito scales to millions of users and supports sign-in with social identity providers,
+			 such as Apple, Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0 and OpenID Connect.
+
+--->Amazon Detective
+		|
+		|-----Analyze and visualize security data to rapidly get to the root cause of potential security issues
+		|-----Amazon Detective makes it easy to analyze, investigate, and quickly identify the
+			 root cause of potential security issues or suspicious activities. Amazon Detective automatically collects log data from your
+			 AWS resources and uses machine learning, statistical analysis, and
+			 graph theory to build a linked set of data that enables you to easily conduct faster and more efficient security investigations.
+
+
+--->Amazon GuardDuty
+		|
+		|-----Protect your AWS accounts with intelligent threat detection
+		|-----Amazon GuardDuty is a threat detection service that continuously monitors
+			 your AWS accounts and workloads for malicious activity and delivers detailed security findings for visibility and remediation.
+		|-Achieve organization-wide visibility into possible threats with only a few clicks
+		|-Expose threats quickly with AWS threat intelligence, behavioral models, and third-party security feeds.
+		|-Mitigate threats early by triggering automated responses.
+
+--->AWS Identity and Access Management (IAM)
+		|
+		|-----AWS Identity and Access Management (IAM) provides fine-grained access control across all of AWS.
+			 With IAM, you can specify who can access which services and resources, and under which conditions.
+			 With IAM policies, you manage permissions to your workforce and systems to ensure least-privilege permissions.
+
+--->Amazon Inspector
+		|
+		|-----Amazon Inspector is an automated vulnerability management service that continually scans AWS workloads for software vulnerabilities and unintended network exposure.
+		|-----Immediately discover and scan AWS workloads for software vulnerabilities and unintended network exposure with a single click.
+		|-----Consolidate your vulnerability management solutions for both Amazon EC2 and ECR into one fully managed service.
+		|-----Use the highly accurate Inspector risk score to efficiently prioritize your remediation.
+		|-----Reduce mean time to remediate (MTTR) vulnerabilities and streamline workflow with Amazon EventBridge and AWS Security Hub integrations.
+
+--->AWS License Manager
+		|
+		|-----Set rules to manage, discover, and report software license usage
+		|-----AWS License Manager makes it easier to manage your software licenses from vendors such as Microsoft, SAP, Oracle, and IBM across AWS and on-premises environments.
+			 AWS License Manager lets administrators create customized licensing rules that mirror the terms of their licensing agreements
+--->Amazon Macie
+		|
+		|-----Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover
+			 and protect your sensitive data in AWS.
+--->AWS Shield
+		|
+		|-----AWS Shield is a managed Distributed Denial of Service (DDoS) protection service
+			 that safeguards applications running on AWS. AWS Shield provides always-on detection and automatic
+			 inline mitigations that minimize application downtime and latency, so there is no need to engage
+			 AWS Support to benefit from DDoS protection. There are two tiers of AWS Shield - Standard and Advanced.
+
+--->AWS WAF
+		|
+		|-----Protect your web applications from common web exploits
+		|-----AWS WAF is a web application firewall that helps protect your web applications or APIs against common web exploits and bots that may affect availability, compromise security, or consume excessive resources.
+		|-----AWS WAF gives you control over how traffic reaches your applications by enabling you to create security rules that control bot traffic and block common attack patterns,
+			 such as SQL injection or cross-site scripting.
+			 You can also customize rules that filter out specific traffic patterns.
+
+10) Storage
+
+--->AWS Backup
+		|
+		|-----Centrally manage and automate backups across AWS services
+		|-----Use AWS Backup to centralize and automate data protection across AWS services and hybrid workloads.
+			 AWS Backup offers a cost-effective, fully managed, policy-based service that further simplifies data protection at scale.
+
+--->Amazon Elastic Block Store (Amazon EBS)
+		|
+		|-----Amazon Elastic Block Store (Amazon EBS) provides block level storage volumes for use with EC2 instances. EBS volumes behave like 
+			raw, unformatted block devices.
+
+--->Amazon Elastic File System (Amazon EFS)
+		|
+		|-----Amazon Elastic File System (Amazon EFS) automatically grows and shrinks as you add and remove files with no need for management or provisioning.
+		|-----Create and configure shared file systems simply and quickly for AWS compute services—no provisioning, deploying, patching, or maintenance required.
+		|-----Scale your file system automatically as files are added, removed, and burst to higher throughput levels when necessary.
+		|-----Pay only for the storage you use and reduce costs up to 92 percent by automatically moving infrequently accessed files
+		|-----Securely and reliably access your files with a fully managed file system designed for 99.999999999 percent (11 9s) durability and up to 99.99 percent (4 9s) of availability.
+
+--->Amazon S3
+		|
+		|-----Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability,
+			 data availability, security, and performance.
+			 Customers of all sizes and industries can store and protect any amount of data for virtually any use case,
+			 such as data lakes, cloud-native applications, and mobile apps. With cost-effective storage classes and easy-to-use management features,
+			 you can optimize costs, organize data, and configure fine-tuned access controls to meet specific business, organizational, and compliance requirements.
+
+
+--->Amazon S3 Glacier
+		|
+		|-----The Amazon S3 Glacier storage classes are purpose-built for data archiving, providing you with the highest performance,
+			 most retrieval flexibility, and the lowest cost archive storage in the cloud. All S3 Glacier storage classes
+			 provide virtually unlimited scalability and are designed for 99.999999999% (11 nines) of data durability.
+			 The S3 Glacier storage classes deliver options for the fastest access to your archive data and the lowest-cost archive storage in the cloud.
+
+--->AWS Snowball Edge
+		|
+		|-----Accelerate moving offline data or remote storage to the cloud
+		|-----Easily migrate terabytes of data to the cloud without limits in storage capacity or compute power.
+		|-----Accelerate application performance in disconnected, austere edge environments and run compute workloads with little or no connectivity.
+		|-----Protect your data in transit with Snowball’s ruggedized chassis, integrated logistics, and tamper-evident box, and get data to the right place quickly.
+
+
+--->AWS Storage Gateway
+		|
+		|-----Provide on-premises applications with access to virtually unlimited cloud storage
+		|-----AWS Storage Gateway is a set of hybrid cloud storage services that provide on-premises access to virtually unlimited cloud storage.
+		|-----Deliver low-latency data access to on-premises applications while leveraging the agility, economics and security capabilities of AWS in the cloud.
+		|-----Provide on-premises applications access to cloud-backed storage without disruption to your business by maintaining user and application workflows.
+		|-----Offer virtually unlimited cloud storage to users and applications without deploying new storage hardware.
+		|-----Support your compliance efforts with key capabilities like encryption, audit logging, and write-once, read-many (WORM) storage.
+
+
+NOTE: For more details you can follow the AWS Documentation.
+"This is the basic of AWS services which we have to know befor starting hand-on experience, also best notes for AWS solution Arch/devop's.
+
+
+
+
+=============================================================================================================================================================
+=----------------------------=
+********************************************Important Questions *******************
+1) AWS Cost Explorer:AWS Cost Explorer has an easy-to-use interface that lets you visualize, understand, and manage your AWS costs and usage over time.
+
+2) AWS Cost and Usage Report:AWS Cost and Usage Reports tracks your AWS usage and provides estimated charges associated with your account
+
+3) AWS Command Line Interface (CLI): The AWS Command Line Interface (CLI) is a unified tool to manage your AWS services. With just one tool to download and configure,
+ you can control multiple AWS services from the command line and automate them through scripts.
+
+4)Elastic Load Balancers: Elastic Load Balancing automatically distributes your incoming traffic
+ across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones.
+ It monitors the health of its registered targets, and routes traffic only to the healthy targets.
+
+5) Amazon EC2 instance types: Amazon EC2 Reserved Instances (RI) provide a significant discount (up to 72%)
+ compared to On-Demand pricing and provide a capacity reservation when used in a specific Availability Zone.
+https://aws.amazon.com/ec2/pricing/reserved-instances/
+
+6) Amazon EC2 instance: On-Demand Instances let you pay for compute capacity by the hour or second (minimum of 60 seconds) 
+with no long-term commitments. This frees you from the costs and complexities of planning, purchasing,
+ and maintaining hardware and transforms what are commonly large fixed costs into much smaller variable costs.
+
+7) Amazon EC2 instance: A Spot Instance is an instance that uses spare EC2 capacity that is available for less than the On-Demand price.
+ Because Spot Instances enable you to request unused EC2 instances at steep discounts,
+ you can lower your Amazon EC2 costs significantly. The hourly price for a Spot Instance is called a Spot price
+
+8)AWS global infrastructure (AWS Regions):26 Launched Regions Each with multiple Availability Zones (AZ’s)
+-->84 Availability Zones
+-->17 Local Zones 28 Wavelength Zones For ultralow latency applications
+-->8 Announced Regions 32 Announced Local Zones 
+-->2x More Regions With multiple AZ’s than the next largest cloud provider
+-->245 Countries and Territories Served
+-->108 Direct Connect Locations
+-->410+ Points of Presence 400+ Edge Locations and 13 Regional Edge Caches
+
+**The AWS Cloud spans 84 Availability Zones within 26 geographic regions around the world, with announced plans for 24 more Availability
+ Zones and 8 more AWS Regions in Australia, Canada, India, Israel, New Zealand, Spain, Switzerland, and United Arab Emirates (UAE).
+
+8) Infrastructure as Code (IaC): Infrastructure as Code (IaC) is the managing and provisioning of infrastructure through code instead of through manual processes.
+ With IaC, configuration files are created that contain your infrastructure specifications, which makes it easier to edit and distribute configurations.
+
+ex: Examples of infrastructure-as-code tools include AWS CloudFormation, Red Hat Ansible, Chef, Puppet, SaltStack and HashiCorp Terraform.
+ Some tools rely on a domain-specific language (DSL), while others use a standard template format, such as YAML and JSON
+
+
+9) Amazon Machine Images (AMIs): An Amazon Machine Image (AMI) is a template that contains a software configuration (for example, an operating system, an application server, and applications).
+ From an AMI, you launch an instance, which is a copy of the AMI running as a virtual server in the cloud.
+
+10) AWS Management Console: The AWS Management Console is a web application that comprises and refers to a broad collection of service consoles for managing AWS resources.
+
+11) AWS Marketplace:The AWS Marketplace enables qualified partners to market and sell their software to AWS Customers. AWS Marketplace is an online software store that helps customers find, buy,
+ and immediately start using the software and services that run on AWS.
+
+12) AWS Professional Services:The AWS Professional Services organization is a global team of experts that can help you realize your desired business outcomes when using the AWS Cloud
+
+13) AWS Personal Health Dashboard:Available to all AWS customers, AWS Personal Health Dashboard provides a personalized view into the performance and availability of the AWS services you are using,
+ as well as alerts that are automatically triggered by changes in the health of those services
+
+14) Security groups:Security groups consist of a set of rules that manage both inbound and outbound traffic on instances. 
+Ideally, they function like virtual firewalls and should form a defense for existing instances.
+ AWS automatically assigns a default security group upon launching EC2 instances in Virtual Private Cloud (VPC).
+
+15) AWS Service Catalog: AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS.
+ These IT services can include everything from virtual machine images,servers, software, and databases to complete multi-tier application architectures.
+
+16) AWS Service Health Dashboard: The AWS Health Dashboard is the single place to learn about the availability and operations of AWS services.
+ You can view the overall status of AWS services, and you can sign in to view personalized communications about your particular AWS account or organization.
+
+17) Service quotas:The maximum number of service resources or operations that apply to an AWS account or an AWS Region.
+ The number of AWS Identity and Access Management (IAM) roles per account is an example of an account-based quota.
+
+18) AWS software development kits (SDKs): The AWS SDK for JavaScript is a collection of software
+	 tools for the creation of applications and libraries that use Amazon Web Services (AWS) resources.
+	 There are separate software development kits (SDKs) for browser-based or server-side JavaScript application development.
+
+19) AWS Support Center: AWS Support Center is the hub for managing your Support cases.
+ 	The newly designed Support Center is moving to the AWS Management Console,
+	providing both federated access support and an improved case management experience.
+ 	The new Support Center location is https://console.aws.amazon.com/support
+
+20) AWS Support tiers: AWS Support is one-on-one, fast-response support from experienced technical support engineers.
+	 The service helps customers use AWS's products and features.
+	 With pay-by-the-month pricing and unlimited support cases, customers are freed from long-term commitments.
+
+21) Virtual private networks (VPNs): AWS Virtual Private Network solutions establish secure connections between your on-premises networks, 
+	remote offices, client devices, and the AWS global network. AWS VPN is comprised of two services:
+ 	AWS Site-to-Site VPN and AWS Client VPN. Each service provides a highly-available, managed, and elastic cloud VPN solution to protect your network traffic.
+
